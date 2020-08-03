@@ -247,6 +247,9 @@
           1,
           2,
           null,
+          2,
+          2,
+          null,
           null
         ]
       },
@@ -255,6 +258,28 @@
           1,
           1,
           null,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/cece/turing/2mod/independent_challenge/final_b2_2005/spec/models/passenger_flight_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/cece/turing/2mod/independent_challenge/final_b2_2005/app/models/passenger_flight.rb": {
+        "lines": [
+          1,
+          1,
           1,
           null
         ]
@@ -270,6 +295,8 @@
           null,
           null,
           1,
+          2,
+          2,
           null,
           null
         ]
@@ -278,10 +305,13 @@
         "lines": [
           1,
           1,
+          null,
+          1,
+          1,
           null
         ]
       }
     },
-    "timestamp": 1596467800
+    "timestamp": 1596468317
   }
 }

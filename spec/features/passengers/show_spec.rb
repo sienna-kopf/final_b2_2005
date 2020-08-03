@@ -79,4 +79,22 @@ RSpec.describe "passenger show page" do
     expect(page).to have_content("Flight number must be valid!")
     expect(current_path).to eq("/passengers/#{@passenger.id}")
   end
+
+  it "throws error message if there is an attempt to add a duplicate flight" do
+    visit "/passengers/#{@passenger.id}"
+
+    within '.add_flight_form' do
+      fill_in :number, with: "1727"
+      click_on "Submit"
+    end
+
+    expect(page).to have_content("Flight is already on the itinerary for this passenger! No duplicates!")
+    expect(current_path).to eq("/passengers/#{@passenger.id}")
+
+    within '.flights' do
+      expect(page).to have_content("Flight 1727", count: 1)
+
+      expect(page).to have_link("1727", count: 1)
+    end
+  end
 end

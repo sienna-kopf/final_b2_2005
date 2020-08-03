@@ -67,4 +67,16 @@ RSpec.describe "passenger show page" do
     expect(page).to have_content("Flight number must be valid!")
     expect(current_path).to eq("/passengers/#{@passenger.id}")
   end
+
+  it "throws error message if an invalid flight id is inputted" do
+    visit "/passengers/#{@passenger.id}"
+
+    within '.add_flight_form' do
+      fill_in :number, with: "8888"
+      click_on "Submit"
+    end
+
+    expect(page).to have_content("Flight number must be valid!")
+    expect(current_path).to eq("/passengers/#{@passenger.id}")
+  end
 end

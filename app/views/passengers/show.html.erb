@@ -7,3 +7,13 @@
     <% end %>
   </ul>
 </section>
+
+<section class = "add_flight_form">
+  <h3>Add Flight for <%= @passenger.name %></h3>
+  <%= form_tag "/passenger_flights?passenger_id=#{@passenger.id}" do %>
+    <%= label_tag :number %>
+    <%= number_field_tag :number %>
+
+    <%= submit_tag 'Submit' %>
+  <% end %>
+</section>

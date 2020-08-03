@@ -64,7 +64,7 @@ RSpec.describe "passenger show page" do
       click_on "Submit"
     end
 
+    expect(page).to have_content("Flight number must be valid!")
     expect(current_path).to eq("/passengers/#{@passenger.id}")
-    expect(page).to have_content("Flight number can't be blank!")
   end
 end

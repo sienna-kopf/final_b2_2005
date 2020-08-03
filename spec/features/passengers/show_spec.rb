@@ -8,6 +8,7 @@ RSpec.describe "passenger show page" do
     @flight_2 = @delta.flights.create!(number: "1837", date: "08/09/20", time: "01:45", departure_city: "Munich", arrival_city: "Atlanta")
     @flight_3 = @united.flights.create!(number: "4787", date: "08/21/20", time: "15:00", departure_city: "Atlanta", arrival_city: "Santiago")
     @flight_4 = @united.flights.create!(number: "7257", date: "08/30/20", time: "08:30", departure_city: "Santiago", arrival_city: "Denver")
+    @flight_5 = @united.flights.create!(number: "4721", date: "09/05/20", time: "11:30", departure_city: "Denver", arrival_city: "San Diego")
 
     @passenger = Passenger.create!(name: "Cece", age: 18)
 
@@ -37,5 +38,21 @@ RSpec.describe "passenger show page" do
     end
 
     expect(current_path).to eq("/flights/#{@flight_3.id}")
+  end
+
+  it "contains a form to add a new flight for that passenger" do
+    visit "/passengers/#{@passenger.id}"
+
+    within '.add_flight_form' do
+      fill_in :flight_number, with: "4721"
+      click_on "Sumbit"
+    end
+
+    expect(current_path).to eq("/passengers/#{@passenger.id}")
+
+    within '.flights' do
+      expect(page).to have_content("Flight 4721")
+      expect(page).to have_link("4721")
+    end
   end
 end

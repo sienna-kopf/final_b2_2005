@@ -55,4 +55,16 @@ RSpec.describe "passenger show page" do
       expect(page).to have_link("4721")
     end
   end
+
+  it "throws error message if form is sumbmitted incomplete" do
+    visit "/passengers/#{@passenger.id}"
+
+    within '.add_flight_form' do
+      fill_in :number, with: ""
+      click_on "Submit"
+    end
+
+    expect(current_path).to eq("/passengers/#{@passenger.id}")
+    expect(page).to have_content("Flight number can't be blank!")
+  end
 end

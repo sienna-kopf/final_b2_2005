@@ -6,8 +6,13 @@ class PassengerFlightsController < ApplicationController
       redirect_to "/passengers/#{passenger.id}"
     else
       flight = Flight.find_by(number: params[:number])
-      passenger.add_flight(flight)
-      redirect_to "/passengers/#{passenger.id}"
+      if passenger.flights.include?(flight)
+        flash[:errors] = "Flight is already on the itinerary for this passenger! No duplicates!"
+        redirect_to "/passengers/#{passenger.id}"
+      else
+        passenger.add_flight(flight)
+        redirect_to "/passengers/#{passenger.id}"
+      end
     end
   end
 end

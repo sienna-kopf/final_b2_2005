@@ -6,6 +6,6 @@ RSpec.describe Airline do
   end
 
   describe 'relationships' do
-    # it {should have_many :flights}
+    it {should have_many :flights}
   end
 end

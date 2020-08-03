@@ -221,6 +221,125 @@
           null
         ]
       },
+      "/Users/cece/turing/2mod/independent_challenge/final_b2_2005/spec/features/passengers/show_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          null,
+          5,
+          null,
+          5,
+          5,
+          5,
+          5,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/cece/turing/2mod/independent_challenge/final_b2_2005/spec/models/airline_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
       "/Users/cece/turing/2mod/independent_challenge/final_b2_2005/app/models/airline.rb": {
         "lines": [
           1,
@@ -291,11 +410,11 @@
           1,
           null,
           1,
-          1,
+          4,
           null,
           null,
           1,
-          1,
+          4,
           null,
           null
         ]
@@ -364,12 +483,59 @@
           1,
           null,
           1,
+          3,
+          null,
+          null
+        ]
+      },
+      "/Users/cece/turing/2mod/independent_challenge/final_b2_2005/app/controllers/flights_controller.rb": {
+        "lines": [
+          1,
+          1,
+          3,
+          null,
+          null
+        ]
+      },
+      "/Users/cece/turing/2mod/independent_challenge/final_b2_2005/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/cece/turing/2mod/independent_challenge/final_b2_2005/app/controllers/passengers_controller.rb": {
+        "lines": [
+          1,
+          1,
+          9,
+          null,
+          null
+        ]
+      },
+      "/Users/cece/turing/2mod/independent_challenge/final_b2_2005/app/controllers/passenger_flights_controller.rb": {
+        "lines": [
+          1,
+          1,
+          4,
+          4,
           2,
+          2,
+          null,
+          2,
+          2,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
           null,
           null
         ]
       }
     },
-    "timestamp": 1596474717
+    "timestamp": 1596474801
   }
 }

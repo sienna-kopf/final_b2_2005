@@ -206,6 +206,12 @@
         "lines": [
           1,
           null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
           null
         ]
       },
@@ -231,28 +237,6 @@
           null
         ]
       },
-      "/Users/cece/turing/2mod/independent_challenge/final_b2_2005/spec/models/flight_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          2,
-          2,
-          2,
-          2,
-          2,
-          null,
-          null,
-          1,
-          2,
-          null,
-          2,
-          2,
-          null,
-          null
-        ]
-      },
       "/Users/cece/turing/2mod/independent_challenge/final_b2_2005/app/models/flight.rb": {
         "lines": [
           1,
@@ -264,14 +248,16 @@
           null
         ]
       },
-      "/Users/cece/turing/2mod/independent_challenge/final_b2_2005/spec/models/passenger_flight_spec.rb": {
+      "/Users/cece/turing/2mod/independent_challenge/final_b2_2005/app/models/passenger.rb": {
         "lines": [
+          1,
           1,
           null,
           1,
           1,
-          2,
-          2,
+          null,
+          1,
+          1,
           null,
           null
         ]
@@ -284,34 +270,44 @@
           null
         ]
       },
-      "/Users/cece/turing/2mod/independent_challenge/final_b2_2005/spec/models/passenger_spec.rb": {
+      "/Users/cece/turing/2mod/independent_challenge/final_b2_2005/app/controllers/passengers_controller.rb": {
         "lines": [
           1,
-          null,
           1,
-          1,
-          2,
-          2,
-          null,
-          null,
-          1,
-          2,
-          2,
+          3,
           null,
           null
         ]
       },
-      "/Users/cece/turing/2mod/independent_challenge/final_b2_2005/app/models/passenger.rb": {
+      "/Users/cece/turing/2mod/independent_challenge/final_b2_2005/app/controllers/application_controller.rb": {
         "lines": [
-          1,
-          1,
-          null,
           1,
           1,
           null
         ]
+      },
+      "/Users/cece/turing/2mod/independent_challenge/final_b2_2005/app/controllers/flights_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/cece/turing/2mod/independent_challenge/final_b2_2005/app/controllers/passenger_flights_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1596468317
+    "timestamp": 1596472469
   }
 }

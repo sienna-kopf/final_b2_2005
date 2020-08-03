@@ -44,8 +44,8 @@ RSpec.describe "passenger show page" do
     visit "/passengers/#{@passenger.id}"
 
     within '.add_flight_form' do
-      fill_in :flight_number, with: "4721"
-      click_on "Sumbit"
+      fill_in :number, with: "4721"
+      click_on "Submit"
     end
 
     expect(current_path).to eq("/passengers/#{@passenger.id}")
